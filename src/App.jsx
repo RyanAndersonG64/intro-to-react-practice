@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom"
+import { useState } from "react"
 
 const Title = () => {
   return (
@@ -8,11 +9,11 @@ const Title = () => {
   )
 }
 
-let counter = 0;
-function count() {
-  counter ++;
-}
+
+
+
 function App() {
+  const [counter, increaseCounter] = useState(0);
   return (
     <div 
       className="bg-primary h-100 p-5"
@@ -20,12 +21,15 @@ function App() {
     >
       <Link className="text-light" to='/about'>About</Link>
       <Title />
-      <button
-      value = 'Count'
-      onClick ={() => count()}
-      >
-      </button>
       <Link className='text-light' to='/contacts'>Contacts</Link>
+      <button
+  className="button"
+  value = 'Count'
+  onClick ={() => increaseCounter(counter + 1)}
+  >
+    Click me
+  </button>
+  <h3>{ counter }</h3>
     </div>
   )
 }

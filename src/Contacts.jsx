@@ -3,7 +3,8 @@ import { Link } from 'react-router-dom'
 function Contacts() {
     return (
         <div>
-            <Link to ='/'>{'<- Back'}</Link>
+            <Link to ='/'>{'<- Back'}</Link><br></br>
+            <Link className="text" to='/about'>About</Link>
             <h1>My Contacts</h1>
             <h2>Henry</h2>
             <h2>Brandon</h2>
@@ -20,3 +21,5 @@ function Contacts() {
         </div>
     )
 }
+
+export default Contacts
