@@ -32,3 +32,13 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <RouterProvider router={router} />
 )
+
+function app() {
+  const title = 'huehuehue'
+  return (
+    <div>
+      <h1>{title}</h1>
+      <button type = 'button'></button>
+    </div>
+  )
+}

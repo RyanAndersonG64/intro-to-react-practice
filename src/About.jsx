@@ -3,7 +3,8 @@ import { Link } from "react-router-dom"
 function About() {
   return (
     <div className="p-5">
-      <Link to='/'>{'<- Back'}</Link>
+      <Link to='/'>{'<- Back '}</Link>
+      <Link className='text' to='/contacts'>Contacts</Link>
       <h1>About Page</h1>
     </div>
   )

@@ -7,3 +7,9 @@ body {
 #root {
   height: 100%;
 }
+
+button {
+  width: 10%;
+  height: 5%;
+  float: right;
+}

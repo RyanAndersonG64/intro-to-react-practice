@@ -3,11 +3,15 @@ import { Link } from "react-router-dom"
 const Title = () => {
   return (
     <h1>
-      Hello World!
+      huehuehue
     </h1>
   )
 }
 
+let counter = 0;
+function count() {
+  counter ++;
+}
 function App() {
   return (
     <div 
@@ -16,6 +20,12 @@ function App() {
     >
       <Link className="text-light" to='/about'>About</Link>
       <Title />
+      <button
+      value = 'Count'
+      onClick ={() => count()}
+      >
+      </button>
+      <Link className='text-light' to='/contacts'>Contacts</Link>
     </div>
   )
 }
